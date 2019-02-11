@@ -6,7 +6,7 @@ class HighchartsComponent extends Component {
   static defaultProps = chartOptions.defaultProps;
 
   render() {
-    return <h2>THis will be Highcharts Container</h2>;
+    return <h2 className="text-center">THis will be Highcharts Container</h2>;
   }
 }
 
