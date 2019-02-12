@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Example from "../../src";
+import "./userDefine.css";
 import "./custom.css";
 
 class Demo extends Component {
