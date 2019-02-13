@@ -16,7 +16,7 @@ class GraphSkeleton extends Component {
       : "";
 
     return (
-      <div id="header_wrapper" className={"parent-container " + headerWrapper}>
+      <div className={"parent-container " + headerWrapper}>
         <h1>
           This library is written by {this.state.myName}{" "}
           {this.props.chart_options.type}{" "}
@@ -28,11 +28,8 @@ class GraphSkeleton extends Component {
               <div className="">
                 <span className="col-4">RadioButton1</span>
                 <span className="col-4">RadioButton2</span>
-                <span className="col-4">
-                  <button className="btn btn-default">
-                    <DatePicker />
-                  </button>
-                </span>
+                <span className="col-4" />
+                <DatePicker />
               </div>
             </div>
           </div>
@@ -49,6 +46,18 @@ class GraphSkeleton extends Component {
       </div>
     );
   }
+}
+function Button(props) {
+  return (
+    <button
+      onClick={() => {
+        console.log("hai");
+        return <DatePicker />;
+      }}
+    >
+      Date
+    </button>
+  );
 }
 
 export default GraphSkeleton;

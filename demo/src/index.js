@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import "react-date-range/dist/styles.css"; // main style file
+import "react-date-range/dist/theme/default.css"; // theme css file
+
 import "bootstrap/dist/css/bootstrap.css";
 
 import Example from "../../src";
-import "./userDefine.css";
+import "./userDefine.scss";
 import "./custom.css";
 
 class Demo extends Component {

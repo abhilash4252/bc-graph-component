@@ -14,5 +14,5 @@ export const defaultProps = {
     type: "line",
     colors: ["blue", "red"]
   },
-  header_wrapper: ["header_wrapper"]
+  header_wrapper: [""]
 };
