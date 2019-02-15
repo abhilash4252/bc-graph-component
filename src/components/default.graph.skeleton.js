@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import * as graphProps from "../utils/graph.props";
 import HighchartsComponent from "./highchartscomponent";
 import DatePicker from "./datepicker";
+import Dropdown from "./dropdown";
 
 class GraphSkeleton extends Component {
   static propTypes = graphProps.propTypes;
@@ -18,8 +19,8 @@ class GraphSkeleton extends Component {
     return (
       <div className={"parent-container " + headerWrapper}>
         <h1>
-          This library is written by {this.state.myName}{" "}
-          {this.props.chart_options.type}{" "}
+          {/* This library is written by {this.state.myName}{" "} */}
+          {/* {this.props.chart_options.type}{" "} */}
         </h1>
         <div className="card margin-top background-set text-right">
           <div className="row">
@@ -28,8 +29,10 @@ class GraphSkeleton extends Component {
               <div className="">
                 <span className="col-4">RadioButton1</span>
                 <span className="col-4">RadioButton2</span>
-                <span className="col-4" />
-                <DatePicker />
+                <span className="col-4">
+                  {/* <DatePicker /> */}
+                  <Dropdown />
+                </span>
               </div>
             </div>
           </div>
