@@ -16,17 +16,15 @@ export const defaultProps = {
   colors: ["blue", "red"],
   title: "Default Bar chart...change options to customize the chart",
   xAxisOptions: {
-      type: "datetime",
-      gridLineWidth: 0,
-      tickLength: 0,
-      labels: {
-          enabled: true,
-          formatter: function() {
-              return moment(this.value).format('DD MMM')
-          }
+    type: "datetime",
+    gridLineWidth: 0,
+    tickLength: 0,
+    labels: {
+      enabled: true,
+      formatter: function() {
+        return moment(this.value).format("DD MMM");
       }
+    }
   },
-  yAxisOptions: {
-      
-  }
+  yAxisOptions: {}
 };
